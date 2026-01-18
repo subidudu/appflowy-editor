@@ -246,7 +246,11 @@ class KeyboardServiceWidgetState extends State<KeyboardServiceWidget>
           viewId: View.of(context).viewId,
           enableDeltaModel: false,
           inputType: TextInputType.multiline,
-          textCapitalization: TextCapitalization.sentences,
+          textCapitalization: TextCapitalization.none,
+          autocorrect: false,
+          enableSuggestions: false,
+          smartDashesType: SmartDashesType.disabled,
+          smartQuotesType: SmartQuotesType.disabled,
           inputAction: TextInputAction.newline,
           keyboardAppearance: Theme.of(context).brightness,
           allowedMimeTypes:
